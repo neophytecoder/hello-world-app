@@ -1,20 +1,16 @@
-import { useEffect, useState } from "react";
+import { Routes, Route } from 'react-router'
+import SearchPage from './pages/SearchPage'
+import FigurePage from './pages/FigurePage'
+import AdminPage from './pages/AdminPage'
 
 function App() {
-  const [message, setMessage] = useState<string>("");
-
-  useEffect(() => {
-    fetch("http://localhost:5001/api/hello")
-      .then((res) => res.json())
-      .then((data) => setMessage(data.message))
-      .catch(() => setMessage("Could not reach backend."));
-  }, []);
-
   return (
-    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
-      <h1>{message || "Loading..."}</h1>
-    </div>
-  );
+    <Routes>
+      <Route path="/" element={<SearchPage />} />
+      <Route path="/figures/:slug" element={<FigurePage />} />
+      <Route path="/admin" element={<AdminPage />} />
+    </Routes>
+  )
 }
 
-export default App;
+export default App
