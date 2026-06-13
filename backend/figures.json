@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Basic Step",
+    "slug": "basic-step",
+    "description": "The foundation of salsa. A six-count pattern on 1-2-3, 5-6-7 with a pause on 4 and 8.",
+    "youtube_id": "MAFEbhOoMtI",
+    "components": []
+  },
+  {
+    "name": "Cross Body Lead",
+    "slug": "cross-body-lead",
+    "description": "The signature move of LA-style salsa. Leader steps aside and guides follower across while rotating 180°.",
+    "youtube_id": "bU7hJJBM1pM",
+    "components": ["basic-step"]
+  },
+  {
+    "name": "Right Turn",
+    "slug": "right-turn",
+    "description": "A single clockwise turn for the follower, initiated on count 1.",
+    "youtube_id": "Q8CKrNvuYXQ",
+    "components": ["basic-step"]
+  },
+  {
+    "name": "Left Turn",
+    "slug": "left-turn",
+    "description": "A single counter-clockwise turn for the follower, led with the left hand on count 1.",
+    "youtube_id": "RmrMGgFKdz8",
+    "components": ["basic-step"]
+  },
+  {
+    "name": "Copa",
+    "slug": "copa",
+    "description": "Leader steps behind follower on count 1 and guides a half-turn. Often used as a combo transition.",
+    "youtube_id": "Tw3I3oNFVnA",
+    "components": ["basic-step", "cross-body-lead"]
+  },
+  {
+    "name": "Enchufla",
+    "slug": "enchufla",
+    "description": "A cross-body lead where both partners turn simultaneously — the most iconic Cuban salsa move.",
+    "youtube_id": "MuLpBXx1Fos",
+    "components": ["basic-step", "cross-body-lead", "right-turn"]
+  }
+]
