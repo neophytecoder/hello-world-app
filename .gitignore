@@ -1,0 +1,6 @@
+node_modules/
+backend/venv/
+.claude/
+dist/
+__pycache__/
+*.pyc
