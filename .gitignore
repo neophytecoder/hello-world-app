@@ -4,3 +4,4 @@ backend/venv/
 dist/
 __pycache__/
 *.pyc
+CLAUDE.md
