@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import {
   Button, Dialog, DialogActions, DialogContent, DialogTitle,
-  TextField, Autocomplete, Chip,
+  TextField, Autocomplete,
 } from '@mui/material'
 import { type FigureDetail, type FigurePayload, type FigureSummary } from '../api'
 
@@ -96,11 +96,6 @@ export default function FigureForm({ open, onClose, onSubmit, initial, allFigure
           options={componentOptions}
           value={components}
           onChange={(_, value) => setComponents(value)}
-          renderTags={(value, getTagProps) =>
-            value.map((option, index) => (
-              <Chip label={option} {...getTagProps({ index })} key={option} size="small" />
-            ))
-          }
           renderInput={params => (
             <TextField {...params} label="Component Figures" helperText="Figures that make up this figure" />
           )}
